@@ -1,0 +1,1377 @@
+options:
+	unranked: &2Unranked Queue
+	ranked: &aRanked Queue
+	elo: &dSettings
+	att: &c&lNo Repeat!
+	c1: &1 #Blue
+	c2: &2 #Green
+	c3: &3 #DarkAqua
+	c4: &4 #Red
+	c5: &5 #Purple
+	c6: &6 #Gold
+	cc: &c #LightRed
+	ca: &e #LightGreen
+	ce: &a #Yellow
+	p: &r
+	perm: &cYou don't have the permission to execute this command!
+
+On Hunger level change:
+	if {spawntag.%player%} is true:
+		cancel event
+		
+on quit:
+	make player execute command "/leave"
+	set leave message to ""
+	set {_slot0} to 0
+	set {_slot1} to 1
+	set {_slot2} to 2
+	set {_slot3} to 3
+	set {_slot4} to 4
+	set {_slot5} to 5
+	set {_slot6} to 6
+	set {_slot7} to 7
+	set {_slot8} to 8
+	set {_slot9} to 9
+	set {_slot10} to 10
+	set {_slot11} to 11
+	set {_slot12} to 12
+	set {_slot13} to 13
+	set {_slot14} to 14
+	set {_slot15} to 15
+	set {_slot16} to 16
+	set {_slot17} to 17
+	
+	set {_type0} to {slot.%{_slot0}%.name}
+	set {_type1} to {slot.%{_slot1}%.name}
+	set {_type2} to {slot.%{_slot2}%.name}
+	set {_type3} to {slot.%{_slot3}%.name}
+	set {_type4} to {slot.%{_slot4}%.name}
+	set {_type5} to {slot.%{_slot5}%.name}
+	set {_type6} to {slot.%{_slot6}%.name}
+	set {_type7} to {slot.%{_slot7}%.name}
+	set {_type8} to {slot.%{_slot8}%.name}
+	set {_type9} to {slot.%{_slot9}%.name}
+	set {_type10} to {slot.%{_slot10}%.name}
+	set {_type11} to {slot.%{_slot11}%.name}
+	set {_type12} to {slot.%{_slot12}%.name}
+	set {_type13} to {slot.%{_slot13}%.name}
+	set {_type14} to {slot.%{_slot14}%.name}
+	set {_type15} to {slot.%{_slot15}%.name}
+	set {_type16} to {slot.%{_slot16}%.name}
+	set {_type17} to {slot.%{_slot17}%.name}
+	if {elo.%{_type0}%.%player%} is not set:
+		set {elo.%{_type0}%.%player%} to 1000
+	if {elo.%{_type1}%.%player%} is not set:
+		set {elo.%{_type1}%.%player%} to 1000
+	if {elo.%{_type2}%.%player%} is not set:
+		set {elo.%{_type2}%.%player%} to 1000
+	if {elo.%{_type3}%.%player%} is not set:
+		set {elo.%{_type3}%.%player%} to 1000
+	if {elo.%{_type4}%.%player%} is not set:
+		set {elo.%{_type4}%.%player%} to 1000
+	if {elo.%{_type5}%.%player%} is not set:
+		set {elo.%{_type5}%.%player%} to 1000
+	if {elo.%{_type6}%.%player%} is not set:
+		set {elo.%{_type6}%.%player%} to 1000
+	if {elo.%{_type7}%.%player%} is not set:
+		set {elo.%{_type7}%.%player%} to 1000
+	if {elo.%{_type8}%.%player%} is not set:
+		set {elo.%{_type8}%.%player%} to 1000
+	if {elo.%{_type9}%.%player%} is not set:
+		set {elo.%{_type9}%.%player%} to 1000
+	if {elo.%{_type10}%.%player%} is not set:
+		set {elo.%{_type10}%.%player%} to 1000
+	if {elo.%{_type11}%.%player%} is not set:
+		set {elo.%{_type11}%.%player%} to 1000
+	if {elo.%{_type12}%.%player%} is not set:
+		set {elo.%{_type12}%.%player%} to 1000
+	if {elo.%{_type13}%.%player%} is not set:
+		set {elo.%{_type13}%.%player%} to 1000
+	if {elo.%{_type14}%.%player%} is not set:
+		set {elo.%{_type14}%.%player%} to 1000
+	if {elo.%{_type15}%.%player%} is not set:
+		set {elo.%{_type15}%.%player%} to 1000
+	if {elo.%{_type16}%.%player%} is not set:
+		set {elo.%{_type16}%.%player%} to 1000
+	if {elo.%{_type17}%.%player%} is not set:
+		set {elo.%{_type17}%.%player%} to 1000
+on join:
+	make player execute command "/leave"
+	set join message to ""
+	teleport player to {spawn}
+	set {_slot0} to 0
+	set {_slot1} to 1
+	set {_slot2} to 2
+	set {_slot3} to 3
+	set {_slot4} to 4
+	set {_slot5} to 5
+	set {_slot6} to 6
+	set {_slot7} to 7
+	set {_slot8} to 8
+	set {_slot9} to 9
+	set {_slot10} to 10
+	set {_slot11} to 11
+	set {_slot12} to 12
+	set {_slot13} to 13
+	set {_slot14} to 14
+	set {_slot15} to 15
+	set {_slot16} to 16
+	set {_slot17} to 17
+	
+	set {_type0} to {slot.%{_slot0}%.name}
+	set {_type1} to {slot.%{_slot1}%.name}
+	set {_type2} to {slot.%{_slot2}%.name}
+	set {_type3} to {slot.%{_slot3}%.name}
+	set {_type4} to {slot.%{_slot4}%.name}
+	set {_type5} to {slot.%{_slot5}%.name}
+	set {_type6} to {slot.%{_slot6}%.name}
+	set {_type7} to {slot.%{_slot7}%.name}
+	set {_type8} to {slot.%{_slot8}%.name}
+	set {_type9} to {slot.%{_slot9}%.name}
+	set {_type10} to {slot.%{_slot10}%.name}
+	set {_type11} to {slot.%{_slot11}%.name}
+	set {_type12} to {slot.%{_slot12}%.name}
+	set {_type13} to {slot.%{_slot13}%.name}
+	set {_type14} to {slot.%{_slot14}%.name}
+	set {_type15} to {slot.%{_slot15}%.name}
+	set {_type16} to {slot.%{_slot16}%.name}
+	set {_type17} to {slot.%{_slot17}%.name}
+	if {elo.%{_type0}%.%player%} is not set:
+		set {elo.%{_type0}%.%player%} to 1000
+	if {elo.%{_type1}%.%player%} is not set:
+		set {elo.%{_type1}%.%player%} to 1000
+	if {elo.%{_type2}%.%player%} is not set:
+		set {elo.%{_type2}%.%player%} to 1000
+	if {elo.%{_type3}%.%player%} is not set:
+		set {elo.%{_type3}%.%player%} to 1000
+	if {elo.%{_type4}%.%player%} is not set:
+		set {elo.%{_type4}%.%player%} to 1000
+	if {elo.%{_type5}%.%player%} is not set:
+		set {elo.%{_type5}%.%player%} to 1000
+	if {elo.%{_type6}%.%player%} is not set:
+		set {elo.%{_type6}%.%player%} to 1000
+	if {elo.%{_type7}%.%player%} is not set:
+		set {elo.%{_type7}%.%player%} to 1000
+	if {elo.%{_type8}%.%player%} is not set:
+		set {elo.%{_type8}%.%player%} to 1000
+	if {elo.%{_type9}%.%player%} is not set:
+		set {elo.%{_type9}%.%player%} to 1000
+	if {elo.%{_type10}%.%player%} is not set:
+		set {elo.%{_type10}%.%player%} to 1000
+	if {elo.%{_type11}%.%player%} is not set:
+		set {elo.%{_type11}%.%player%} to 1000
+	if {elo.%{_type12}%.%player%} is not set:
+		set {elo.%{_type12}%.%player%} to 1000
+	if {elo.%{_type13}%.%player%} is not set:
+		set {elo.%{_type13}%.%player%} to 1000
+	if {elo.%{_type14}%.%player%} is not set:
+		set {elo.%{_type14}%.%player%} to 1000
+	if {elo.%{_type15}%.%player%} is not set:
+		set {elo.%{_type15}%.%player%} to 1000
+	if {elo.%{_type16}%.%player%} is not set:
+		set {elo.%{_type16}%.%player%} to 1000
+	if {elo.%{_type17}%.%player%} is not set:
+		set {elo.%{_type17}%.%player%} to 1000
+		
+#
+#
+#                 Duel
+#
+#
+
+
+command /duel <player> [<text>]:
+	trigger:
+		if arg-1 is set:
+			if arg-1 is player:
+				send "&cYou cannot duel Yourself!" to player
+				stop trigger
+			else:
+				if {dueled.%arg-1%} is true:
+					send "&cThis player is currently busy" to player
+					stop trigger
+				else:
+					if {dueled.%player%} is true:
+						send "&cYou cannot duel!"
+						stop trigger
+					else:
+						set {_type0} to 0
+						set {_type1} to 1
+						set {_type2} to 2
+						set {_type3} to 3
+						set {_type4} to 4
+						set {_type5} to 5
+						set {_type6} to 6
+						set {_type7} to 7
+						set {_type8} to 8
+						set {_type9} to 9
+						set {_type10} to 10
+						set {_type11} to 11
+						set {_type12} to 12
+						set {_type13} to 13
+						set {_type14} to 14
+						set {_type15} to 15
+						set {_type16} to 16
+						set {_type17} to 17
+						
+						
+						open chest with 1 rows named "&9What type of game?" to player
+						if {typeset::%{_type0}%} is set:
+							format slot {_type0} of player with {slot.%{_type0}%.item} named "{@ce}%{slot.%{_type0}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type0}%.name}%"]
+						if {typeset::%{_type1}%} is set:
+							format slot {_type1} of player with {slot.%{_type1}%.item} named "{@ce}%{slot.%{_type1}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type1}%.name}%"]
+						if {typeset::%{_type2}%} is set:
+							format slot {_type2} of player with {slot.%{_type2}%.item} named "{@ce}%{slot.%{_type2}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type2}%.name}%"]
+						if {typeset::%{_type3}%} is set:
+							format slot {_type3} of player with {slot.%{_type3}%.item} named "{@ce}%{slot.%{_type3}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type3}%.name}%"]		
+						if {typeset::%{_type4}%} is set:
+							format slot {_type4} of player with {slot.%{_type4}%.item} named "{@ce}%{slot.%{_type4}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type4}%.name}%"]		
+						if {typeset::%{_type5}%} is set:
+							format slot {_type5} of player with {slot.%{_type5}%.item} named "{@ce}%{slot.%{_type5}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type5}%.name}%"]		
+						if {typeset::%{_type6}%} is set:
+							format slot {_type6} of player with {slot.%{_type6}%.item} named "{@ce}%{slot.%{_type6}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type6}%.name}%"]		
+						if {typeset::%{_type7}%} is set:
+							format slot {_type7} of player with {slot.%{_type7}%.item} named "{@ce}%{slot.%{_type7}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type7}%.name}%"]
+						if {typeset::%{_type8}%} is set:
+							format slot {_type8} of player with {slot.%{_type8}%.item} named "{@ce}%{slot.%{_type8}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type8}%.name}%"]
+						if {typeset::%{_type9}%} is set:
+							format slot {_type9} of player with {slot.%{_type9}%.item} named "{@ce}%{slot.%{_type9}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type9}%.name}%"]
+						if {typeset::%{_type10}%} is set:
+							format slot {_type10} of player with {slot.%{_type10}%.item} named "{@ce}%{slot.%{_type10}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type10}%.name}%"]
+						if {typeset::%{_type11}%} is set:
+							format slot {_type11} of player with {slot.%{_type11}%.item} named "{@ce}%{slot.%{_type11}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type11}%.name}%"]
+						if {typeset::%{_type12}%} is set:
+							format slot {_type12} of player with {slot.%{_type12}%.item} named "{@ce}%{slot.%{_type12}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type12}%.name}%"]		
+						if {typeset::%{_type13}%} is set:
+							format slot {_type13} of player with {slot.%{_type13}%.item} named "{@ce}%{slot.%{_type13}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type13}%.name}%"]		
+						if {typeset::%{_type14}%} is set:
+							format slot {_type14} of player with {slot.%{_type14}%.item} named "{@ce}%{slot.%{_type14}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type14}%.name}%"]		
+						if {typeset::%{_type15}%} is set:
+							format slot {_type15} of player with {slot.%{_type15}%.item} named "{@ce}%{slot.%{_type15}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type15}%.name}%"]		
+						if {typeset::%{_type16}%} is set:
+							format slot {_type16} of player with {slot.%{_type16}%.item} named "{@ce}%{slot.%{_type16}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type16}%.name}%"]
+						if {typeset::%{_type17}%} is set:
+							format slot {_type17} of player with {slot.%{_type17}%.item} named "{@ce}%{slot.%{_type17}%.name}%" to close then run [make player execute command "/duel %arg-1% %{slot.%{_type17}%.name}%"]
+	
+		if arg-2 is set:
+			if arg-1 is player:
+				send "&cYou cannot duel Yourself!" to player
+				stop trigger
+			else:
+				if {dueled.%arg-1%} is true:
+					send "&c%arg-1% is already in duel!" to player
+					stop trigger
+				else:
+					if {dueled.%player%} is true:
+						send "&cYou are in duel!"
+						stop trigger
+					else:
+						set {wanted.%player%} to arg-1
+						send "&eSent a duel request to &a%arg-1% &ewith the kit &a%arg-2%&e!"
+						send json "&a%player% &ehas requested a duel with the kit &a%arg-2%&e! &fClick here to accept." tooltip "&fClick to accept!" run "/accept %player% %arg-2%" to player argument 1
+command /accept <player> [<text>]:
+	trigger:
+		if arg-1 is player:
+			send "&cYou cannot duel Yourself!" to player
+			stop trigger
+		else:
+			if {dueled.%arg-1%} is true:
+				send "&c%arg-1% is already in duel!" to player
+				stop trigger
+			else:
+				if {dueled.%player%} is true:
+					send "&cYou are in duel!"
+					stop trigger
+				else:	
+					if {wanted.%arg-1%} is player:
+						set {_player2} to arg-1
+						wait 1 tick
+						send "&eStarting duel against &a%{_Player2}%" to player
+						send "&eStarting duel against &a%player%" to {_Player2}
+						wait 1 tick
+						set {dueled.%player%} to true
+						set {dueled.%{_Player2}%} to true
+						set {Opposant.%player%} to {_Player2}
+						set {Opposant.%{_Player2}%} to player
+						remove player from {umatchlist.%arg-2%::*}
+						remove player from {rmatchlist.%arg-2%::*}
+						remove {_Player2} from {rmatchlist.%arg-2%::*}
+						remove {_Player2} from {umatchlist.%arg-2%::*}
+						clear player's inventory
+						clear {_Player2}'s inventory
+						give book named "&aKIT: Default" to slot 0 of player
+						give book named "&aKIT: %arg-2% 1" to slot 2 of player
+						give book named "&aKIT: %arg-2% 1" to slot 2 of {_player2}
+						give book named "&aKIT: Default" to slot 0 of {_Player2}
+						set {_max} to {max}
+						set {_Random} to a random integer between 0 and {_max}
+						set {waitmatch.%player%} to arg-2
+						set {waitmatch.%{_player2}%} to arg-2
+						if {_Random} is 0:
+							set {_Random} to 1
+						wait 1 tick
+						teleport player to {Arena%{_Random}%.1}
+						teleport {_Player2} to {Arena%{_Random}%.2}
+						hide all players to player
+						hide player to all players
+						hide all players to {_Player2}
+						hide {_Player2} to all players
+						set {inqueue.%player%} to false
+						set {inqueue.%{_Player2}%} to false						
+						send "&eThe match starts in &a5&e..." to player
+						send "&eThe match starts in &a5&e..." to {_Player2}
+						wait 1 seconds			
+						send "&eThe match starts in &a4&e..." to player
+						send "&eThe match starts in &a4&e..." to {_Player2}
+						wait 1 seconds			
+						send "&eThe match starts in &a3&e..." to player
+						send "&eThe match starts in &a3&e..." to {_Player2}
+						wait 1 seconds
+						send "&eThe match starts in &a2&e..." to player
+						send "&eThe match starts in &a2&e..." to {_Player2}
+						wait 1 seconds
+						send "&eThe match starts in &a1&e..." to player
+						send "&eThe match starts in &a1&e..." to {_Player2}
+						wait 1 seconds
+						send "&aThe match has started, good luck!" to player
+						send "&aThe match has started, good luck!" to {_Player2}
+						reveal {_Player2} to player
+						reveal {_Player2} to {_Player2}
+						reveal player to player
+						reveal player to {_Player2}
+#
+#
+#                     Arenas
+#
+#
+
+command /setspawn1 <int>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if arg 1 is set:
+			set {Arena%arg-1%.1} to player's location
+			send "&bYou have set the spawn 1 for the arena &3%arg-1%"
+command /setspawn2 <int>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if arg 1 is set:
+			set {Arena%arg-1%.2} to player's location
+			send "&bYou have set the spawn 2 for the arena &3%arg-1%"
+command /arenacreate <int>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if arg 1 is set:
+			set {max} to arg-1
+			send "&bThe number of arenas is &3%arg-1% &bnow"
+			
+			
+#
+#
+#                  Gametypes
+#
+#
+command /kitcreate <text>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if arg 1 is set:
+			if {dueltype::%arg-1%} is set:
+				send "&cThis gametype already exist!" to player
+				add player to {umatchlist.%arg-1%::*}
+				remove player from {umatchlist.%arg-1%::*}
+				stop trigger
+			else:
+				set {dueltype::%arg-1%} to arg-1
+				send "&cYou have been create the kit &c%arg-1%" to player
+				stop trigger
+command /kitdel <text> <int>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if {dueltype::%arg-1%} is not set:
+			send "&cThis gametype does not exist" to player
+			stop trigger
+		else:
+			delete {dueltype::%arg-1%}
+			delete {slot.%arg-2%.name}
+			delete {slot.%arg-2%.item}
+			delete {typeset::%arg-2%}
+			send "&cYou have been delete the gametype :&c %arg-1%" to player
+			stop trigger
+command /kitslot <text> <integer> <item>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if {dueltype::%arg-1%} is set:
+			if arg-2 <= 17:
+				set {_slot} to arg-2
+				clear {slot.%{_slot}%.name}
+				clear {slot.%{_slot}%.item}
+				loop {duel.%arg-1%::*}:
+					set {_slotdelinv} to loop-value
+				delete {typeset::%{_slotdelinv}%}
+				clear {slot.%{_slotdelinv}%.item}
+				clear {slot.%{_slotdelinv}%.name}
+				wait 1 tick
+				set {slot.%{_slot}%.name} to arg-1
+				set {slot.%{_slot}%.item} to arg-3
+				set {typeset::%arg-2%} to arg-2
+				clear {duel.%arg-1%::*}
+				wait 1 tick
+				add arg-2 to {duel.%arg-1%::*}
+				send "&cDone!" to player
+				stop trigger
+			else:
+				send "&cInvalid Slot!"
+		else:
+			send "&cThis gametype doesn't exist!" to player
+			stop trigger
+command /kitinv <text>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if {dueltype::%arg-1%} is set:
+			player can't hold 36 wooden swords:
+				clear {default.%arg-1%}
+				set {default.%arg-1%} to player's serialized inventory
+				set {helmdefault.%arg-1%} to helmet of the player
+				set {chestdefault.%arg-1%} to chestplate of the player
+				set {legsdefault.%arg-1%} to leggings of the player
+				set {bootsdefault.%arg-1%} to boots of the player
+				message "&cDefault inventory succesfully saved." to player
+			player can hold 36 wooden swords:
+				message "&cYour inventory is empty!" to player
+				stop
+		else:
+			send "&cInvalid Kit!"
+			stop trigger
+command /§defaultinv <text>:
+	trigger:
+		if {dueltype::%arg-1%} is set:
+			clear player's inventory
+			set {_type} to arg-1
+			restore inventory of player from {default.%{_type}%}
+			equip player with {bootsdefault.%{_type}%}
+			equip player with {chestdefault.%{_type}%}
+			equip player with {legsdefault.%{_type}%}
+			equip player with {helmdefault.%{_type}%}
+			stop
+			
+#
+#
+#                      Ranked/Unranked
+#
+#
+command /unranked [<text>]:		
+	trigger:
+		if {dueled.%player%} is true:
+			send "&cYou are in duel!" to player
+			stop trigger
+		else if {inqueue.%player%} is true:
+			send "{@att}" to player
+			stop trigger
+		if arg-1 is not set:
+			set {_type0} to 0
+			set {_type1} to 1
+			set {_type2} to 2
+			set {_type3} to 3
+			set {_type4} to 4
+			set {_type5} to 5
+			set {_type6} to 6
+			set {_type7} to 7
+			set {_type8} to 8
+			set {_type9} to 9
+			set {_type10} to 10
+			set {_type11} to 11
+			set {_type12} to 12
+			set {_type13} to 13
+			set {_type14} to 14
+			set {_type15} to 15
+			set {_type16} to 16
+			set {_type17} to 17
+			
+			
+			open chest with 1 rows named "&8Unranked Queue" to player
+			if {typeset::%{_type0}%} is set:
+				format slot {_type0} of player with {slot.%{_type0}%.item} named "{@ce}%{slot.%{_type0}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type0}%.name}%"]
+			if {typeset::%{_type1}%} is set:
+				format slot {_type1} of player with {slot.%{_type1}%.item} named "{@ce}%{slot.%{_type1}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type1}%.name}%"]
+			if {typeset::%{_type2}%} is set:
+				format slot {_type2} of player with {slot.%{_type2}%.item} named "{@ce}%{slot.%{_type2}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type2}%.name}%"]
+			if {typeset::%{_type3}%} is set:
+				format slot {_type3} of player with {slot.%{_type3}%.item} named "{@ce}%{slot.%{_type3}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type3}%.name}%"]		
+			if {typeset::%{_type4}%} is set:
+				format slot {_type4} of player with {slot.%{_type4}%.item} named "{@ce}%{slot.%{_type4}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type4}%.name}%"]		
+			if {typeset::%{_type5}%} is set:
+				format slot {_type5} of player with {slot.%{_type5}%.item} named "{@ce}%{slot.%{_type5}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type5}%.name}%"]		
+			if {typeset::%{_type6}%} is set:
+				format slot {_type6} of player with {slot.%{_type6}%.item} named "{@ce}%{slot.%{_type6}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type6}%.name}%"]		
+			if {typeset::%{_type7}%} is set:
+				format slot {_type7} of player with {slot.%{_type7}%.item} named "{@ce}%{slot.%{_type7}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type7}%.name}%"]
+			if {typeset::%{_type8}%} is set:
+				format slot {_type8} of player with {slot.%{_type8}%.item} named "{@ce}%{slot.%{_type8}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type8}%.name}%"]
+			if {typeset::%{_type9}%} is set:
+				format slot {_type9} of player with {slot.%{_type9}%.item} named "{@ce}%{slot.%{_type9}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type9}%.name}%"]
+			if {typeset::%{_type10}%} is set:
+				format slot {_type10} of player with {slot.%{_type10}%.item} named "{@ce}%{slot.%{_type10}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type10}%.name}%"]
+			if {typeset::%{_type11}%} is set:
+				format slot {_type11} of player with {slot.%{_type11}%.item} named "{@ce}%{slot.%{_type11}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type11}%.name}%"]
+			if {typeset::%{_type12}%} is set:
+				format slot {_type12} of player with {slot.%{_type12}%.item} named "{@ce}%{slot.%{_type12}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type12}%.name}%"]		
+			if {typeset::%{_type13}%} is set:
+				format slot {_type13} of player with {slot.%{_type13}%.item} named "{@ce}%{slot.%{_type13}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type13}%.name}%"]		
+			if {typeset::%{_type14}%} is set:
+				format slot {_type14} of player with {slot.%{_type14}%.item} named "{@ce}%{slot.%{_type14}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type14}%.name}%"]		
+			if {typeset::%{_type15}%} is set:
+				format slot {_type15} of player with {slot.%{_type15}%.item} named "{@ce}%{slot.%{_type15}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type15}%.name}%"]		
+			if {typeset::%{_type16}%} is set:
+				format slot {_type16} of player with {slot.%{_type16}%.item} named "{@ce}%{slot.%{_type16}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type16}%.name}%"]
+			if {typeset::%{_type17}%} is set:
+				format slot {_type17} of player with {slot.%{_type17}%.item} named "{@ce}%{slot.%{_type17}%.name}%" to close then run [make player execute command "/unranked %{slot.%{_type17}%.name}%"]
+		
+		if arg-1 is set:
+			if {inqueue.%player%} is true:
+				send "{@att}" to player
+				stop trigger
+			else if {dueled.%player%} is true:
+				send "&cYou are in duel!" to player
+				stop trigger
+			if {umatchlist.%arg-1%::*} contains player:
+				send "&eYou have been added to the &aUnranked %arg-1% &equeue!" to player
+				delete {waitmatch.%player%}
+				set {waitmatch.%player%} to arg-1
+				add player to {umatchlist.%arg-1%::*}
+				set {inqueue.%player%} to true
+				clear player's inventory
+				give a redstone named "&eLeave the queue" to slot 0 of player
+			if (size of {umatchlist.%arg-1%::*}) is less than 1:
+				send "&eYou have been added to the &aUnranked %arg-1% &equeue!" to player
+				delete {waitmatch.%player%}
+				set {waitmatch.%player%} to arg-1
+				add player to {umatchlist.%arg-1%::*}
+				set {inqueue.%player%} to true
+				clear player's inventory
+				give a redstone named "&eLeave the queue" to slot 0 of player
+			else:		
+				delete {dueled.%player%}
+				add player to {umatchlist.%arg-1%::*}
+				set {_Player2} to a random element of {umatchlist.%arg-1%::*}
+				while {_Player2} is player:
+					set {_Player2} to a random element of {umatchlist.%arg-1%::*}
+				wait 1 tick
+				send "&eStarting duel against &a%{_Player2}%" to player
+				send "&eStarting duel against &a%player%" to {_Player2}
+				wait 1 tick
+				set {dueled.%player%} to true
+				set {dueled.%{_Player2}%} to true
+				set {Opposant.%player%} to {_Player2}
+				set {Opposant.%{_Player2}%} to player
+				remove player from {umatchlist.%arg-1%::*}
+				set {waitmatch.%player%} to arg-1
+				set {waitmatch.%{_player2}%} to arg-1
+				remove {_Player2} from {umatchlist.%arg-1%::*}
+				clear player's inventory
+				clear {_Player2}'s inventory
+				give book named "&aKIT: Default" to slot 0 of player
+				give book named "&aKIT: %arg-1% 1" to slot 2 of player
+				give book named "&aKIT: %arg-1% 1" to slot 2 of {_player2}
+				give book named "&aKIT: Default" to slot 0 of {_Player2}
+				set {_max} to {max}
+				set {_Random} to a random integer between 0 and {_max}
+				if {_Random} is 0:
+					set {_Random} to 1
+				wait 1 tick
+				teleport player to {Arena%{_Random}%.1}
+				teleport {_Player2} to {Arena%{_Random}%.2}
+				hide all players to player
+				hide player to all players
+				hide all players to {_Player2}
+				hide {_Player2} to all players
+				set {inqueue.%player%} to false
+				send "&eThe match starts in &a5&e..." to player
+				send "&eThe match starts in &a5&e..." to {_Player2}
+				wait 1 seconds			
+				send "&eThe match starts in &a4&e..." to player
+				send "&eThe match starts in &a4&e..." to {_Player2}
+				wait 1 seconds			
+				send "&eThe match starts in &a3&e..." to player
+				send "&eThe match starts in &a3&e..." to {_Player2}
+				wait 1 seconds
+				send "&eThe match starts in &a2&e..." to player
+				send "&eThe match starts in &a2&e..." to {_Player2}
+				wait 1 seconds
+				send "&eThe match starts in &a1&e..." to player
+				send "&eThe match starts in &a1&e..." to {_Player2}
+				wait 1 seconds
+				send "&aThe match has started, good luck!" to player
+				send "&aThe match has started, good luck!" to {_Player2}
+				reveal {_Player2} to player
+				reveal {_Player2} to {_Player2}
+				reveal player to player
+				reveal player to {_Player2}				
+command /ranked [<text>]:		
+	trigger:
+		if {dueled.%player%} is true:
+			send "&cYou are in duel!" to player
+			stop trigger
+		else if {inqueue.%player%} is true:
+			send "&c{@att}" to player
+			stop trigger
+		if arg-1 is not set:
+			set {_type0} to 0
+			set {_type1} to 1
+			set {_type2} to 2
+			set {_type3} to 3
+			set {_type4} to 4
+			set {_type5} to 5
+			set {_type6} to 6
+			set {_type7} to 7
+			set {_type8} to 8
+			set {_type9} to 9
+			set {_type10} to 10
+			set {_type11} to 11
+			set {_type12} to 12
+			set {_type13} to 13
+			set {_type14} to 14
+			set {_type15} to 15
+			set {_type16} to 16
+			set {_type17} to 17
+			
+			
+			open chest with 1 rows named "&8Ranked Queue" to player
+			if {typeset::%{_type0}%} is set:
+				format slot {_type0} of player with {slot.%{_type0}%.item} named "{@ce}%{slot.%{_type0}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type0}%.name}%"]
+			if {typeset::%{_type1}%} is set:
+				format slot {_type1} of player with {slot.%{_type1}%.item} named "{@ce}%{slot.%{_type1}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type1}%.name}%"]
+			if {typeset::%{_type2}%} is set:
+				format slot {_type2} of player with {slot.%{_type2}%.item} named "{@ce}%{slot.%{_type2}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type2}%.name}%"]
+			if {typeset::%{_type3}%} is set:
+				format slot {_type3} of player with {slot.%{_type3}%.item} named "{@ce}%{slot.%{_type3}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type3}%.name}%"]		
+			if {typeset::%{_type4}%} is set:
+				format slot {_type4} of player with {slot.%{_type4}%.item} named "{@ce}%{slot.%{_type4}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type4}%.name}%"]		
+			if {typeset::%{_type5}%} is set:
+				format slot {_type5} of player with {slot.%{_type5}%.item} named "{@ce}%{slot.%{_type5}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type5}%.name}%"]		
+			if {typeset::%{_type6}%} is set:
+				format slot {_type6} of player with {slot.%{_type6}%.item} named "{@ce}%{slot.%{_type6}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type6}%.name}%"]		
+			if {typeset::%{_type7}%} is set:
+				format slot {_type7} of player with {slot.%{_type7}%.item} named "{@ce}%{slot.%{_type7}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type7}%.name}%"]
+			if {typeset::%{_type8}%} is set:
+				format slot {_type8} of player with {slot.%{_type8}%.item} named "{@ce}%{slot.%{_type8}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type8}%.name}%"]
+			if {typeset::%{_type9}%} is set:
+				format slot {_type9} of player with {slot.%{_type9}%.item} named "{@ce}%{slot.%{_type9}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type9}%.name}%"]
+			if {typeset::%{_type10}%} is set:
+				format slot {_type10} of player with {slot.%{_type10}%.item} named "{@ce}%{slot.%{_type10}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type10}%.name}%"]
+			if {typeset::%{_type11}%} is set:
+				format slot {_type11} of player with {slot.%{_type11}%.item} named "{@ce}%{slot.%{_type11}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type11}%.name}%"]
+			if {typeset::%{_type12}%} is set:
+				format slot {_type12} of player with {slot.%{_type12}%.item} named "{@ce}%{slot.%{_type12}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type12}%.name}%"]		
+			if {typeset::%{_type13}%} is set:
+				format slot {_type13} of player with {slot.%{_type13}%.item} named "{@ce}%{slot.%{_type13}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type13}%.name}%"]		
+			if {typeset::%{_type14}%} is set:
+				format slot {_type14} of player with {slot.%{_type14}%.item} named "{@ce}%{slot.%{_type14}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type14}%.name}%"]		
+			if {typeset::%{_type15}%} is set:
+				format slot {_type15} of player with {slot.%{_type15}%.item} named "{@ce}%{slot.%{_type15}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type15}%.name}%"]		
+			if {typeset::%{_type16}%} is set:
+				format slot {_type16} of player with {slot.%{_type16}%.item} named "{@ce}%{slot.%{_type16}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type16}%.name}%"]
+			if {typeset::%{_type17}%} is set:
+				format slot {_type17} of player with {slot.%{_type17}%.item} named "{@ce}%{slot.%{_type17}%.name}%" to close then run [make player execute command "/ranked %{slot.%{_type17}%.name}%"]
+		
+		if arg-1 is set:
+			set {PlayerRanked.%player%} to arg-1
+			set {Ranked.%arg-1%.%player%} to true
+			set {PlayerRanked.%{_Player2}%} to arg-1
+			set {Ranked.%arg-1%.%{_Player2}%} to true
+			if {inqueue.%player%} is true:
+				send "&c{@att}" to player
+				stop trigger
+			else if {dueled.%player%} is true:
+				send "&cTu es deja en combat!" to player
+				stop trigger
+			if {rmatchlist.%arg-1%::*} contains player:
+				send "&eYou have been added to the &aRanked %arg-1% &equeue with &a%{elo.%arg-1%.%player%}% elo&e!" to player
+				delete {waitmatch.%player%}
+				set {waitmatch.%player%} to arg-1
+				add player to {rmatchlist.%arg-1%::*}
+				set {inqueue.%player%} to true
+				clear player's inventory
+				give a redstone named "&eLeave the queue" to slot 0 of player
+			if (size of {rmatchlist.%arg-1%::*}) is less than 1:
+				send "&eYou have been added to the &aRanked %arg-1% &equeue with &a%{elo.%arg-1%.%player%}% elo&e!" to player
+				delete {waitmatch.%player%}
+				set {waitmatch.%player%} to arg-1
+				add player to {rmatchlist.%arg-1%::*}
+				clear player's inventory
+				give a redstone named "&eLeave the queue" to slot 0 of player
+			else:			
+				delete {dueled.%player%}
+				add player to {rmatchlist.%arg-1%::*}
+				set {_Player2} to a random element of {rmatchlist.%arg-1%::*}
+				while {_Player2} is player:
+					set {_Player2} to a random element of {rmatchlist.%arg-1%::*}
+				wait 1 tick
+				send "&eStarting duel against &a%{_Player2}% &ewith &a%{elo.%arg-1%.%{_player2}%}% &aelo" to player
+				send "&eStarting duel against &a%player% &ewith &a%{elo.%arg-1%.%player%}%&a elo" to {_player2}
+				wait 1 tick
+				set {dueled.%player%} to true
+				set {dueled.%{_Player2}%} to true
+				set {Opposant.%player%} to {_Player2}
+				set {Opposant.%{_Player2}%} to player
+				remove player from {rmatchlist.%arg-1%::*}
+				remove {_Player2} from {rmatchlist.%arg-1%::*}
+				clear player's inventory
+				clear {_Player2}'s inventory
+				set {waitmatch.%player%} to arg-1
+				set {waitmatch.%{_player2}%} to arg-1
+				give book named "&aKIT: Default" to slot 0 of player
+				give book named "&aKIT: %arg-1% 1" to slot 2 of player
+				give book named "&aKIT: %arg-1% 1" to slot 2 of {_player2}
+				give book named "&aKIT: Default" to slot 0 of {_Player2}
+				set {_max} to {max}
+				set {_Random} to a random integer between 0 and {_max}
+				if {_Random} is 0:
+					set {_Random} to 1
+				wait 1 tick
+				teleport player to {Arena%{_Random}%.1}
+				teleport {_Player2} to {Arena%{_Random}%.2}
+				hide all players to player
+				hide player to all players
+				hide all players to {_Player2}
+				hide {_Player2} to all players
+				set {inqueue.%player%} to false
+				send "&eThe match starts in &a5&e..." to player
+				send "&eThe match starts in &a5&e..." to {_Player2}
+				wait 1 seconds			
+				send "&eThe match starts in &a4&e..." to player
+				send "&eThe match starts in &a4&e..." to {_Player2}
+				wait 1 seconds			
+				send "&eThe match starts in &a3&e..." to player
+				send "&eThe match starts in &a3&e..." to {_Player2}
+				wait 1 seconds
+				send "&eThe match starts in &a2&e..." to player
+				send "&eThe match starts in &a2&e..." to {_Player2}
+				wait 1 seconds
+				send "&eThe match starts in &a1&e..." to player
+				send "&eThe match starts in &a1&e..." to {_Player2}
+				wait 1 seconds
+				send "&aThe match has started, good luck!" to player
+				send "&aThe match has started, good luck!" to {_Player2}
+				reveal {_Player2} to player
+				reveal {_Player2} to {_Player2}
+				reveal player to player
+				reveal player to {_Player2}				
+				
+#
+#
+# Save Kit|LoadKit
+#
+#
+
+command /savekit <text>:
+	trigger:
+		if arg 1 is set:
+			set {save.%player%.lastused} to now
+			clear {kitnodebuff.%player%}
+			wait 1 tick
+			set {kit.%arg-1%.%player%} to player's serialized inventory
+			set {kithelm.%arg-1%.%player%} to helmet of player
+			set {kitchest.%arg-1%.%player%} to chestplate of player
+			set {kitlegs.%arg-1%.%player%} to leggings of player
+			set {kitboots.%arg-1%.%player%} to boots of player
+			clear player's helmet
+			clear player's chestplate
+			clear player's leggings
+			clear player's boots
+			equip player with {kithelm.%arg-1%.%player%}
+			equip player with {kitchest.%arg-1%.%player%} 
+			equip player with {kitlegs.%arg-1%.%player%}
+			equip player with {kitboots.%arg-1%.%player%}
+			set {kit.%arg-1%.save.%player%} to true
+			message "&aKit Save: &a%arg-1%" to player
+			stop
+			
+#
+#
+#                        Elo
+#
+#
+on rightclick with a book:
+	name of tool is "&6Edit Kits"
+	make player execute command "/§edc"
+on rightclick with a book:
+	name of tool is "&aKIT: Default"
+	make player execute command "/§defaultinv %{waitmatch.%player%}%"
+on rightclick with a book:
+	name of tool is "&aKIT: %{waitmatch.%player%}% 1"
+	make player execute command "/§loadkit %{waitmatch.%player%}%"
+command /§loadkit <text>:
+	trigger:
+		if {kit.%arg-1%.save.%player%} is true:
+			clear player's inventory
+			restore inventory of player from {kit.%arg-1%.%player%}
+			equip player with {kithelm.%arg-1%.%player%}
+			equip player with {kitchest.%arg-1%.%player%} 
+			equip player with {kitlegs.%arg-1%.%player%}
+			equip player with {kitboots.%arg-1%.%player%}
+		else:
+			send "&cYou don't have set your kit!"
+command /§delkit <text>:
+	trigger:
+		delete {kit.%arg-1%.%player%}
+		delete {kithelm.%arg-1%.%player%}
+		delete {kitchest.%arg-1%.%player%}
+		delete {kitlegs.%arg-1%.%player%}
+		delete {kitboots.%arg-1%.%player%}
+		set {kit.%arg-1%.save.%player%} to false
+on rightclick on a anvil:
+	set {_type0} to 0
+	set {_type1} to 1
+	set {_type2} to 2
+	set {_type3} to 3
+	set {_type4} to 4
+	set {_type5} to 5
+	set {_type6} to 6
+	set {_type7} to 7
+	set {_type8} to 8
+	if {edit.%{slot.%{_type0}%.name}%.%player%} is true:
+		cancel event
+		open chest with 1 rows named "&bKit %{slot.%{_type0}%.name}%" to player
+		wait 3 tick
+		format slot 3 of player with a green wool named "&aSave Kit 1" to close then run [make player execute command "/savekit %{slot.%{_type2}%.name}%"]
+		format slot 4 of player with a blue wool named "&9Load Kit 1" to close then run [make player execute command "/§loadkit %{slot.%{_type2}%.name}%"]
+		format slot 5 of player with a red wool named "&cDelete Kit 1" to close then run [make player execute command "§delkit %{slot.%{_type2}%.name}%"]
+	if {edit.%{slot.%{_type2}%.name}%.%player%} is true:
+		cancel event
+		open chest with 1 rows named "&bKit %{slot.%{_type2}%.name}%" to player
+		wait 3 tick
+		format slot 3 of player with a green wool named "&aSave Kit 1" to close then run [make player execute command "/savekit %{slot.%{_type3}%.name}%"]
+		format slot 4 of player with a blue wool named "&9Load Kit 1" to close then run [make player execute command "/§loadkit %{slot.%{_type3}%.name}%"]
+		format slot 5 of player with a red wool named "&cDelete Kit 1" to close then run [make player execute command "§delkit %{slot.%{_type3}%.name}%"]
+command /§edit <text>:
+	trigger:
+		teleport player to {edit.%arg-1%}
+		clear player's inventory
+		make player execute command "/§defaultinv %arg-1%"
+		set {edit.%arg-1%.%player%} to true
+command /setedit <text>:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		if {dueltype::%arg-1%} is set:
+			send "&bYou have set the editkit: &3%arg-1%!" to player
+			set {edit.%arg-1%} to player's location
+			stop trigger
+		else:
+			send "&cMode of game invalided!"
+on rightclick on a sign:
+	if line 1 of clicked block is "spawn":
+		set line 1 of clicked block to "&0Rightclick to"
+		set line 2 of clicked block to "&0Back to Spawn"
+	if line 1 of clicked block is "&0Rightclick to":
+		clear player's inventory
+		wait 1 ticks
+		make player execute command "/leave"
+		teleport player to {spawn}
+		remove speed from player
+		remove fire resistance from player
+		set {_type0} to 0
+		set {_type1} to 1
+		set {_type2} to 2
+		set {_type3} to 3
+		set {_type4} to 4
+		set {_type5} to 5
+		set {_type6} to 6
+		set {_type7} to 7
+		set {_type8} to 8
+		set {_type9} to 9
+		set {_type10} to 10
+		set {_type11} to 11
+		set {_type12} to 12
+		set {_type13} to 13
+		set {_type14} to 14
+		set {_type15} to 15
+		set {_type16} to 16
+		set {_type17} to 17
+		delete {edit.%{slot.%{_type0}%.name}%.%player%}
+		delete {edit.%{slot.%{_type1}%.name}%.%player%}
+		delete {edit.%{slot.%{_type2}%.name}%.%player%}
+		delete {edit.%{slot.%{_type3}%.name}%.%player%}
+		delete {edit.%{slot.%{_type4}%.name}%.%player%}
+		delete {edit.%{slot.%{_type5}%.name}%.%player%}
+		delete {edit.%{slot.%{_type6}%.name}%.%player%}
+		delete {edit.%{slot.%{_type7}%.name}%.%player%}
+		delete {edit.%{slot.%{_type8}%.name}%.%player%}
+		delete {edit.%{slot.%{_type9}%.name}%.%player%}
+		delete {edit.%{slot.%{_type10}%.name}%.%player%}
+		delete {edit.%{slot.%{_type11}%.name}%.%player%}
+		delete {edit.%{slot.%{_type12}%.name}%.%player%}
+		delete {edit.%{slot.%{_type13}%.name}%.%player%}
+		delete {edit.%{slot.%{_type14}%.name}%.%player%}
+		delete {edit.%{slot.%{_type15}%.name}%.%player%}
+		delete {edit.%{slot.%{_type16}%.name}%.%player%}
+		delete {edit.%{slot.%{_type17}%.name}%.%player%}
+command /§edc:
+	trigger:
+		set {_type0} to 0
+		set {_type1} to 1
+		set {_type2} to 2
+		set {_type3} to 3
+		set {_type4} to 4
+		set {_type5} to 5
+		set {_type6} to 6
+		set {_type7} to 7
+		set {_type8} to 8
+		set {_type9} to 9
+		set {_type10} to 10
+		set {_type11} to 11
+		set {_type12} to 12
+		set {_type13} to 13
+		set {_type14} to 14
+		set {_type15} to 15
+		set {_type16} to 16
+		set {_type17} to 17
+		
+		
+		open chest with 1 rows named "&8Kit Editor" to player
+		wait 3 ticks
+		if {typeset::%{_type0}%} is set:
+			format slot {_type0} of player with {slot.%{_type0}%.item} named "{@ce}%{slot.%{_type0}%.name}%" to close then run [make player execute command "/§edit %{slot.%{_type0}%.name}%"]
+		if {typeset::%{_type2}%} is set:
+			format slot {_type1} of player with {slot.%{_type2}%.item} named "{@ce}%{slot.%{_type2}%.name}%" to close then run [make player execute command "/§edit %{slot.%{_type1}%.name}%"]		
+		
+command /practice setspawn:
+	permission: practice.admin
+	permission message: {@perm}
+	trigger:
+		set {spawn} to player's location
+		send "&c[Practice] Set Spawn!"
+on rightclick with redstone:
+	name of tool is "&eLeave the queue"
+	make player execute command "/leave"
+command /leave:
+	trigger:
+		if {dueled.%player%} is true:
+			send "&cYou are in duel!" to player
+			stop trigger
+		else:
+			remove player from {umatchlist.%{waitmatch.%player%}%::*}
+			remove player from {rmatchlist.%{waitmatch.%player%}%::*}
+			delete {PlayerRanked.%player%}
+			set {Ranked.%{waitmatch.%player%}%.%player%} to false
+			set {dueled.%player%} to false
+			if {inqueue.%player%} is true:	
+				send "&cYou have left the queue."
+			clear player's inventory
+			wait 4 ticks
+			execute console command "/effect %player% clear"
+			remove fire resistance from player
+			remove speed from player
+			set {inqueue.%player%} to false
+			give iron sword named "{@unranked}" to slot 7 of player
+			give diamond sword named "{@ranked}" to slot 8 of player
+			give book named "&6Edit Kits" to slot 0 of player
+			teleport player to {spawn}
+			send ""
+			send "&4WARNING: &cThe server is configured by @Vuxtel"
+			send "&aSuscribe to Channel of Vuxtel: https://www.youtube.com/c/vuxtel"
+			send ""
+on rightclick with iron sword:
+	name of tool is "{@unranked}"
+	make player execute command "/unranked"
+on rightclick with diamond sword:
+	name of tool is "{@ranked}"
+	make player execute command "/ranked"
+on rightclick with Daylight Sensor:
+	name of tool is "{@elo}"
+	make player execute command "/§settings"
+on death:
+	delete {wanted.%attacker%}
+	delete {wanted.%victim%}
+	set {_slot} to 0
+	loop 36 times:
+		set {slot.viewinv.%{_slot}%.%attacker%} to slot {_slot} of attacker
+		add 1 to {_slot}
+	set {_slot1} to 0
+	loop 36 times:
+		set {slot.viewinv.%{_slot1}%.%victim%} to slot {_slot1} of victim
+		add 1 to {_slot1}
+	wait 2 ticks
+	send "" to attacker
+	send "" to victim
+	send "&eMatch Results:" to attacker
+	send "&eMatch Results:" to victim
+	send "" to attacker
+	send "" to victim
+	send json "&eWinner: &a%attacker%" tooltip "&fClick here!" run "/viewinv %attacker%" to victim
+	send json "&eWinner: &a%attacker%" tooltip "&fClick here!" run "/viewinv %attacker%" to attacker
+	send json "&eLoser: &c%victim%" tooltip "&fClick here!" run "/viewinv %victim%" to attacker
+	send json "&eLoser: &c%victim%" tooltip "&fClick here!" run "/viewinv %victim%" to victim
+	send "" to attacker
+	send "" to victim
+command /viewinv [<offline player>]:
+	trigger:
+		open chest with 5 rows named "&8%arg-1%'s inventory" to player
+		set {_slot} to 0
+		loop 36 times:
+			format slot {_slot} of player with {slot.viewinv.%{_slot}%.%arg-1%} to be unstealable
+			add 1 to {_slot}
+command /§death00:
+	trigger:
+		if {dueled.%player%} is true:
+			remove player from {umatchlist.%{waitmatch.%player%}%::*}
+			remove player from {rmatchlist.%{waitmatch.%player%}%::*}
+			delete {PlayerRanked.%player%}
+			set {Ranked.%{waitmatch.%player%}%.%player%} to false
+			set {dueled.%player%} to false
+			if {inqueue.%player%} is true:	
+				send "{@p}&cYou have been removed from &c%{waitmatch.%player%}% &cqueue"
+			clear player's inventory
+			wait 4 ticks
+			set {inqueue.%player%} to false
+			set {spawntag.%player%} to true
+			give book named "&6Edit Kit" to slot 0 of player
+			give diamond sword named "{@ranked}" to slot 8 of player
+			give iron sword named "{@unranked}" to slot 7 of player
+			remove fire resistance from player
+			remove speed from player
+			make player execute command "/§food"
+			reveal all players to player
+			reveal player to all players
+			teleport player to {spawn}
+on respawn:
+	teleport player to {spawn}
+on death of player:
+	if {dueled.%victim%} is true:
+		heal victim
+		teleport victim to {spawn}
+		set death message to ""
+		set {inqueue.%attacker%} to false
+		set {dueled.%attacker%} to false
+		set {inqueue.%victim%} to false
+		set {dueled.%victim%} to false
+		clear attacker's inventory
+		make attacker execute command "/§effectc"		
+		remove attacker from {umatchlist.%{waitmatch.%attacker%}%::*}
+		remove victim from {umatchlist.%{waitmatch.%victim%}%::*}
+		delete {dueled.%attacker%} 
+		delete {dueled.%victim%}
+		clear drops
+		clear victim's inventory
+		set {inqueue.%victim%} to false
+		remove speed from victim
+		set {inqueue.%attacker%} to false
+		heal attacker
+		remove speed from attacker
+		remove fire resistance from attacker
+		clear victim's inventory
+		wait 1 tick
+		set {spawntag.%victim%} to true
+		give book named "&6Edit Kits" to slot 0 of victim
+		give diamond sword named "{@ranked}" to slot 8 of victim
+		give iron sword named "{@unranked}" to slot 7 of victim
+		wait 1 seconds
+		clear attacker's inventory
+		teleport attacker to {spawn}
+		heal attacker
+		reveal all players to player
+		reveal player to all players
+		reveal all players to {_Player2}
+		reveal {_Player2} to all players
+		set {spawntag.%attacker%} to true
+		give book named "&6Edit Kits" to slot 0 of attacker
+		give diamond sword named "{@ranked}" to slot 8 of attacker
+		give iron sword named "{@unranked}" to slot 7 of attacker
+		delete {PlayerRanked.%attacker%}
+		delete {PlayerRanked.%victim%}
+		set {Ranked.%{waitmatch.%attacker%}%.%attacker%} to false	
+		set {Ranked.%{waitmatch.%victim%}%.%victim%} to false
+		remove fire resistance from victim
+		remove speed from victim
+		remove speed from {Opposant.%victim%}
+		make attacker execute command "/§food"
+		make victim execute command "/§food"
+		make victim execute command "/§effectc"
+		delete {Opposant.%{Opposant.%victim%}%}
+		delete {Opposant.%victim%}
+On quit:
+		send "&9Your opposant left the server! You will be teleported in few seconds!" to {Opposant.%player%}
+		make {Opposant.%player%} execute command "/§death00"
+		wait 3 ticks
+		make player execute command "/§death00"
+on death:
+	set {_type} to {PlayerRanked.%victim%}
+	if {Ranked.%{_type}%.%victim%} is true:
+		if {Ranked.%{_type}%.%attacker%} is true:
+			if {elo.%{_type}%.%attacker%} is not set:
+				set {elo.%{_type}%.%attacker%} to 1000
+			if {elo.%{_type}%.%attacker%} is not set:
+				set {elo.%{_type}%.%attacker%} to 1000
+			victim is a player
+			attacker is a player
+			delete {PlayerRanked.%victim%}
+			delete {PlayerRanked.%attacker%}
+			delete {Ranked.%{_type}%.%attacker%}
+			delete {Ranked.%{_type}%.%victim%}
+			if {elo.%{_type}%.%attacker%} <= {elo.%{_type}%.%victim%}:
+				set {_elobetwin} to {elo.%{_type}%.%victim%}-{elo.%{_type}%.%attacker%}
+				if {_elobetwin} is between 0 and 24:
+					add 16 to {elo.%{_type}%.%attacker%}
+					remove 16 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% +16 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -16 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% +16 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -16 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 25 and 49:
+					add 17 to {elo.%{_type}%.%attacker%}
+					remove 17 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 17 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -17 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 17 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -17 (%{elo.%{_type}%.%victim%}%)" to attacker		
+				if {_elobetwin} is between 50 and 74:
+					add 18 to {elo.%{_type}%.%attacker%}
+					remove 18 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 18 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -18 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 18 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -18 (%{elo.%{_type}%.%victim%}%)" to attacker			
+				if {_elobetwin} is between 75 and 99:
+					add 19 to {elo.%{_type}%.%attacker%}
+					remove 19 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 19 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -19 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 19 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -19 (%{elo.%{_type}%.%victim%}%)" to attacker			
+				if {_elobetwin} is between 100 and 124:
+					add 20 to {elo.%{_type}%.%attacker%}
+					remove 20 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 20 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -20 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 20 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -20 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 125 and 149:
+					add 21 to {elo.%{_type}%.%attacker%}
+					remove 21 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 21 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -21 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 21 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -21 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 150 and 174:
+					add 22 to {elo.%{_type}%.%attacker%}
+					remove 22 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 22 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -22 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 22 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -22 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 175 and 199:
+					add 23 to {elo.%{_type}%.%attacker%}
+					remove 23 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 23 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -23 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 23 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -23 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 200 and 224:
+					add 24 to {elo.%{_type}%.%attacker%}
+					remove 24 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 24 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -24 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 24 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -24 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 225 and 249:
+					add 25 to {elo.%{_type}%.%attacker%}
+					remove 25 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 25 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -25 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 25 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -25 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 250 and 274:
+					add 26 to {elo.%{_type}%.%attacker%}
+					remove 26 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 26 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -26 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 26 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -26 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 275 and 299:
+					add 27 to {elo.%{_type}%.%attacker%}
+					remove 27 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 27 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -27 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 27 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -27 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 300 and 324:
+					add 28 to {elo.%{_type}%.%attacker%}
+					remove 28 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 28 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -28 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 28 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -28 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 325 and 349:
+					add 29 to {elo.%{_type}%.%attacker%}
+					remove 29 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 29 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -29 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 29 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -29 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 350 and 399:
+					add 30 to {elo.%{_type}%.%attacker%}
+					remove 30 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 30 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -30 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 30 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -30 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} > 400:
+					add 31 to {elo.%{_type}%.%attacker%}
+					remove 31 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 31 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -31 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 31 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -31 (%{elo.%{_type}%.%victim%}%)" to attacker		
+			else:
+				set {_elobetwin} to {elo.%{_type}%.%attacker%}-{elo.%{_type}%.%victim%}
+				if {_elobetwin} is between 0 and 24:
+					add 16 to {elo.%{_type}%.%attacker%}
+					remove 16 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% +16 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -16 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% +16 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -16 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 25 and 49:
+					add 15 to {elo.%{_type}%.%attacker%}
+					remove 15 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 15 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -15 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 15 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -15 (%{elo.%{_type}%.%victim%}%)" to attacker		
+				if {_elobetwin} is between 50 and 74:
+					add 14 to {elo.%{_type}%.%attacker%}
+					remove 14 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 14 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -14 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 14 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -14 (%{elo.%{_type}%.%victim%}%)" to attacker			
+				if {_elobetwin} is between 75 and 99:
+					add 13 to {elo.%{_type}%.%attacker%}
+					remove 13 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 13 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -13 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 13 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -13 (%{elo.%{_type}%.%victim%}%)" to attacker			
+				if {_elobetwin} is between 100 and 124:
+					add 12 to {elo.%{_type}%.%attacker%}
+					remove 12 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 12 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -12 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 12 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -12 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 125 and 149:
+					add 11 to {elo.%{_type}%.%attacker%}
+					remove 11 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 11 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -11 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 11 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -11 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 150 and 174:
+					add 10 to {elo.%{_type}%.%attacker%}
+					remove 10 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 10 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -10 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 10 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -10 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 175 and 199:
+					add 9 to {elo.%{_type}%.%attacker%}
+					remove 9 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 9 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -9 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 9 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -9 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 200 and 224:
+					add 8 to {elo.%{_type}%.%attacker%}
+					remove 8 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 8 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -8 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 8 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -8 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 225 and 249:
+					add 7 to {elo.%{_type}%.%attacker%}
+					remove 7 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 7 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -7 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 7 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -7 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 250 and 274:
+					add 6 to {elo.%{_type}%.%attacker%}
+					remove 6 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 6 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -6 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 6 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -6 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 275 and 299:
+					add 5 to {elo.%{_type}%.%attacker%}
+					remove 5 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 5 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -5 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 5 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -5 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 300 and 324:
+					add 4 to {elo.%{_type}%.%attacker%}
+					remove 4 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 4 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -4 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 4 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -4 (%{elo.%{_type}%.%victim%}%)" to attacker	
+				if {_elobetwin} is between 325 and 349:
+					add 3 to {elo.%{_type}%.%attacker%}
+					remove 3 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 3 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -3 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 3 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -3 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} is between 350 and 399:
+					add 2 to {elo.%{_type}%.%attacker%}
+					remove 2 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 2 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -2 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 2 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -2 (%{elo.%{_type}%.%victim%}%)" to attacker
+				if {_elobetwin} > 400:
+					add 1 to {elo.%{_type}%.%attacker%}
+					remove 1 from {elo.%{_type}%.%victim%}
+					wait 3 ticks
+					send "{@ce}Elo change: {@ca}%attacker% + 1 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -1 (%{elo.%{_type}%.%victim%}%)" to victim
+					send "{@ce}Elo change: {@ca}%attacker% + 1 (%{elo.%{_type}%.%attacker%}%) - {@cc}%victim% -1 (%{elo.%{_type}%.%victim%}%)" to attacker	
+on rightclick with ender pearl:
+	if {cooldown.enderpearl.time.%player%} is not set:
+		set {cooldown.enderpearl.time.%player%} to 0 
+	if {cooldown.enderpearl.time.%player%} > 0:
+		send "&cPlease wait &c%{cooldown.enderpearl.time.%player%}%&c for use another pearl."
+		cancel event
+		stop
+	else:
+		set {cooldown.enderpearl.time.%player%} to 8
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 7
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 6 
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 5
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 4 
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 3 
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 2 
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 1
+		wait 1 second
+		set {cooldown.enderpearl.time.%player%} to 0 
+on break:
+	if player is op:
+		stop
+	else:
+		cancel event
+on place:
+	if player is op:
+		stop
+	else:
+		cancel event
+on damage:
+	if {dueled.%victim%} is false:
+		cancel event
+
+on drop: 
+	if {loggedin.%player%} is false: 
+		cancel event
+on damage:
+	damage cause is fall:
+		victim has permission "skript.nofall":
+			cancel the event
+			
+on damage:
+	damage cause is void:
+		victim has permission "skript.novoid":
+			cancel the event
+			
+on damage:
+	damage cause is fall:
+		"%region at victim%" contains "NoFallDamage":
+			cancel the event		
+
+command /§food:
+	trigger:
+		set the player's food level to 20
+		
+command /§effectc:
+	trigger:
+		execute console command "/effect %player% clear"				
+		
