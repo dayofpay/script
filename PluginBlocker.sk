@@ -1,0 +1,51 @@
+command /pl:
+	trigger:
+		send "&fPlugins (0):"
+
+command /plugins:
+	trigger:
+		send "&fPlugins (0):"
+
+command /?:
+	trigger:
+		send "&e--------- &fHelp: Index (0/0) &e--------------------"
+
+command /help:
+	trigger:
+		send "&e---- &6Help &e-- &6Page &c1&6/&c1 &e----"
+
+command /bukkit:?:
+	trigger:
+		send "&e--------- &fHelp: Index (0/0) &e--------------------"
+
+command /bukkit:help:
+	trigger:
+		send "&e--------- &fHelp: Index (0/0) &e--------------------"
+
+command /bukkit:pl:
+	trigger:
+		send "&fPlugins (0):"
+
+command /bukkit:plugins:
+	trigger:
+		send "&fPlugins (0):"
+
+command /version:
+	trigger:
+		send "&c&lSorry &cYou Dont Have Access To This Command"
+
+command /bukkit:version:
+	trigger:
+		send "&c&lSorry &cYou Dont Have Access To This Command"
+
+command /icanhasbukkit:
+	trigger:
+		send "&c&lSorry &cYou Dont Have Access To This Command"
+
+command /ver:
+	trigger:
+		send "&c&lSorry &cYou Dont Have Access To This Command"
+
+command /bukkit:ver:
+	trigger:
+		send "&c&lSorry &cYou Dont Have Access To This Command"
