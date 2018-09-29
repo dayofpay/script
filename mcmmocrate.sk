@@ -1,0 +1,94 @@
+command /mmocratehelp:
+	trigger:
+		if player has permission "mmocrate.use.help":
+			send "&6---------&fMCMMO&acrate help&8---------"
+			send "&6-  &3/mmocrate <player> | &eGives a MCMMO Crate."
+		else:
+			send "&cYou don't have permission!"
+
+command /mmocrate <players>:
+        permission: mmocrate.give
+        permission message: &7[&fMCMMO&acrate&7] &cYou don't have permission to execute this command.
+        description: Get a MCMMO Crate!
+        trigger:
+                give arg 1 chest named "&f&lMCMMO&a&lcrate" with lore "&7>> (Right-click) to receive your MCMMO <<"
+
+options:
+
+        Prefix: &7[&fMCMMO&acrate&7] &r
+
+        Percentage: 100
+
+        Broadcast: true
+
+        BroadcastMessage: &e&l%player% &bhas opened a &fMCMMO&acrate
+
+        RewardMessage1: &bYou have received &f&l10 MCMMO Credits
+        RewardMessage2: &bYou have received &f&l20 MCMMO Credits
+        RewardMessage3: &bYou have received &f&l30 MCMMO Credits
+        RewardMessage4: &bYou have received &f&l40 MCMMO Credits
+        RewardMessage5: &bYou have received &f&l50 MCMMO Credits
+        RewardMessage6: &bYou have received &f&l60 MCMMO Credits
+        RewardMessage7: &bYou have received &f&l70 MCMMO Credits
+        RewardMessage8: &bYou have received &f&l80 MCMMO Credits
+        RewardMessage9: &bYou have received &f&l90 MCMMO Credits
+        RewardMessage10: &bYou have received &f&l100 MCMMO Credits
+        RewardMessage11: &bYou have received &f&l110 MCMMO Credits
+        RewardMessage12: &bYou have received &f&l120 MCMMO Credits
+        RewardMessage13: &bYou have received &f&l130 MCMMO Credits
+        RewardMessage14: &bYou have received &f&l140 MCMMO Credits
+        RewardMessage15: &bYou have received &f&l150 MCMMO Credits
+
+
+on rightclick:
+	player is holding chest named "&f&lMCMMO&a&lcrate" with lore "&7>> (Right-click) to receive your MCMMO <<"
+	remove 1 chest named "&f&lMCMMO&a&lcrate" with lore "&7>> (Right-click) to receive your MCMMO <<" from player
+	chance of {@Percentage}%
+	if "{@Broadcast}" is "true":
+		broadcast "{@Prefix}{@BroadcastMessage}"
+		set {MCMMO} to a random integer between 1 and 15
+	if {MCMMO} is 1:
+		execute console command "/addcredits %player% 10"
+		message "{@Prefix}{@RewardMessage1}"
+	if {MCMMO} is 2:
+		execute console command "/addcredits %player% 20"
+		message "{@Prefix}{@RewardMessage2}"
+	if {MCMMO} is 3:
+		execute console command "/addcredits %player% 30"
+		message "{@Prefix}{@RewardMessage3}"
+	if {MCMMO} is 4:
+		execute console command "/addcredits %player% 40"
+		message "{@Prefix}{@RewardMessage4}"
+	if {MCMMO} is 5:
+		execute console command "/addcredits %player% 50"
+		message "{@Prefix}{@RewardMessage5}"
+	if {MCMMO} is 6:
+		execute console command "/addcredits %player% 60"
+		message "{@Prefix}{@RewardMessage6}"
+	if {MCMMO} is 7:
+		execute console command "/addcredits %player% 70"
+		message "{@Prefix}{@RewardMessage7}"
+	if {MCMMO} is 8:
+		execute console command "/addcredits %player% 80"
+		message "{@Prefix}{@RewardMessage8}"
+	if {MCMMO} is 9:
+		execute console command "/addcredits %player% 90"
+		message "{@Prefix}{@RewardMessage9}"
+	if {MCMMO} is 10:
+		execute console command "/addcredits %player% 100"
+		message "{@Prefix}{@RewardMessage10}"
+	if {MCMMO} is 11:
+		execute console command "/addcredits %player% 110"
+		message "{@Prefix}{@RewardMessage11}"
+	if {MCMMO} is 12:
+		execute console command "/addcredits %player% 120"
+		message "{@Prefix}{@RewardMessage12}"
+	if {MCMMO} is 13:
+		execute console command "/addcredits %player% 130"
+		message "{@Prefix}{@RewardMessage13}"
+	if {MCMMO} is 14:
+		execute console command "/addcredits %player% 140"
+		message "{@Prefix}{@RewardMessage14}"
+	if {MCMMO} is 15:
+		execute console command "/addcredits %player% 150"
+		message "{@Prefix}{@RewardMessage15}"
