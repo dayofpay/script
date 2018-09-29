@@ -1,0 +1,119 @@
+on join:
+	set join message to ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	send ""
+	
+	
+
+On quit:
+	set leave message to ""
+			
+		
+on command "/pl":
+	cancel event
+	send "&4You don't have access to that command! "
+on command "/plugins":
+	cancel event
+	send "&4You don't have access to that command! "
+on command "/bukkit:pl":
+	cancel event
+	send "&4You don't have access to that command! "
+on command "/bukkit:plugins":
+	cancel event
+	send "&4You don't have access to that command! "
+on command "/?":
+	cancel event
+	send "&4You don't have access to that command!"
+on command "/bukkit:?":
+	cancel event
+	send "&4You don't have access to that command!"
+on command "/version":
+	cancel event
+	send "&4You don't have access to that command! "
+on command "/help":
+	cancel event
+	send "&4You don't have access to that command!"
+on command "/me":
+	cancel event
+	send "&4You don't have access to that command!"
+on command "/say":
+	cancel event
+	send "&4You don't have access to that command!"
+on command "/ver":
+	cancel event
+	send "&4You don't have access to that command!"	
+on command "/icanhasbukkit":
+	cancel event
+	send "&4You don't have access to that command!"		
+	
+	
+	
+	
+	
+	
+	
+	
+#
+#
+#
+#     COLORS
+#
+#
+#
+
+command /resetcolor:
+	permission: color.reset
+	trigger:
+		make console execute command "/nick %player% off"	
+
+command /colors:
+	aliases: /color, /colores
+	trigger:
+		send ""	
+		send "&c&lExample:"
+		send "&7&b/blue &7for reset &c/resetcolor"
+		send "&cThe options are: &bblue, &2darkgreen, &dpink, &5purple &cand &6orange"
+		send "&cYou will need to first purchase a nickname on store.potspvp.us"
+		send ""		
+
+command /blue:
+	permission message: &cYou will need to first purchase a nickname on the store at store.potspvp.us
+	permission: color.blue
+	trigger:
+		make console execute command "/nick %player% &b%player%"
+command /darkgreen:
+	permission message: &cYou will need to first purchase a nickname on the store at store.potspvp.us
+	permission: color.darkgreen
+	trigger:
+		make console execute command "/nick %player% &2%player%"
+command /pink:
+	permission message: &cYou will need to first purchase a nickname on the store at store.potspvp.us
+	permission: color.pink
+	trigger:
+		make console execute command "/nick %player% &d%player%"
+command /purple:
+	permission message: &cYou will need to first purchase a nickname on the store at store.potspvp.us
+	permission: color.purple
+	trigger:
+		make console execute command "/nick %player% &5%player%"
+command /orange:
+	permission message: &cYou will need to first purchase a nickname on the store at store.potspvp.us
+	permission: color.orange
+	trigger:
+		make console execute command "/nick %player% &6%player%"		
+		
