@@ -1,0 +1,22 @@
+# Enderpearl
+ 
+# Променете опциите, редактирайте времето на Enderpearl Cooldown, както искате, и съобщението е конфигурируемо!
+# В WorldEnabled добавете или премахнете света, където искате ENABLE ограничаването!
+# Добавете разрешението ec.bypass на хора, които НЕ искат ограничението!
+options:
+    EnderCooldown: 20 seconds
+    EnderMessage: &cYou have to wait %difference between {@EnderCooldown} and {_waited}%!!
+    WorldEnabled: "world" or "world_nether" or "world_the_end" or "yourworld"
+    PermissionBypass: ec.bypass
+ 
+ 
+# Ne smenqi nishto ot tuk!
+on rightclick holding a ender pearl:
+    if player is in {@WorldEnabled}:
+        if player don't have the permission "{@PermissionBypass}":
+            set {_waited} to difference between {enderpearl.%player%.lastused} and now
+            if {_waited} is less than {@EnderCooldown}:
+                message "{@EnderMessage}"
+                cancel the event
+            else:
+                set {enderpearl.%player%.lastused} to now
